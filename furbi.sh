@@ -13,7 +13,8 @@ echo "└  └─┘┴└─└─┘┴└─┘┴ ┴"
 echo "🚧 RENOVATE YOUR PROJECT DIRECTORY"
 echo 
 echo "${BLUE}1.${NC} Set up a Polymer 3 project"
-echo "${BLUE}2.${NC} Credits & special thanks"
+echo "${BLUE}2.${NC} Set up a Vue 2 project"
+echo "${BLUE}3.${NC} Credits & special thanks"
 echo 
 echo "What would you like to do? ($DEFAULT_OPTION): \c"
 read ACTION
@@ -22,6 +23,8 @@ read ACTION
 if [ "$ACTION" == "1" ]; then
     /bin/sh -c "$(curl -fsSL ${URL}/polymer3.sh)"
 elif [ "$ACTION" == "2" ]; then
+    /bin/sh -c "$(curl -fsSL ${URL}/vue2.sh)"
+elif [ "$ACTION" == "3" ]; then
     echo 
     echo "${GREEN}Thanks to the people and organisations who made this possible"
     echo 
